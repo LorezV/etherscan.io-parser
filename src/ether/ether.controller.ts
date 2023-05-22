@@ -1,11 +1,11 @@
 import { Controller, Get } from "@nestjs/common";
-import { BlockService } from "./block.service";
+import { EtherService } from "./ether.service";
 import { performance } from "perf_hooks";
 
 @Controller()
-export class BlockController {
+export class EtherController {
     constructor(
-        private readonly blockService: BlockService
+        private readonly blockService: EtherService
     ) {}
 
     @Get("api/address/mostChanged")

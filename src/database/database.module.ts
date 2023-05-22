@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { Block } from "src/block/entities/block.entity";
-import { Transaction } from "src/block/entities/transaction.entity";
+import { Block } from "src/ether/entities/block.entity";
+import { Transaction } from "src/ether/entities/transaction.entity";
 
 @Module({
     imports: [

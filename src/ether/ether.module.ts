@@ -1,15 +1,15 @@
 import { Module } from "@nestjs/common";
-import { BlockService } from "./block.service";
+import { EtherService } from "./ether.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { Block } from "./entities/block.entity";
-import { Transaction } from "src/block/entities/transaction.entity";
+import { Transaction } from "src/ether/entities/transaction.entity";
 import { ExecuterModule } from "src/executer/executer.module";
-import { BlockController } from "./block.controller";
+import { EtherController } from "./ether.controller";
 
 @Module({
     imports: [TypeOrmModule.forFeature([Block, Transaction]), ExecuterModule],
-    providers: [BlockService],
-    controllers: [BlockController]
+    providers: [EtherService],
+    controllers: [EtherController]
 })
-export class BlockModule {
+export class EtherModule {
 }

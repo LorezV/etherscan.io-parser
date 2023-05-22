@@ -9,7 +9,7 @@ import { Transaction } from "./entities/transaction.entity";
 import { ExecuterService } from "src/executer/executer.service";
 
 @Injectable()
-export class BlockService {
+export class EtherService {
     constructor(
         private readonly configService: ConfigService,
         @InjectRepository(Block)
