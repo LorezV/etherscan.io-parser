@@ -15,8 +15,11 @@ import { Transaction } from "src/ether/entities/transaction.entity";
                 username: configService.get('database.user'),
                 password: configService.get('database.password'),
                 database: configService.get('database.db'),
-                entities: [Block, Transaction],
+                entities: ["dist/**/*.entity{ .ts,.js}"],
                 synchronize: true,
+                migrations: ["dist/migrations/*{.ts,.js}"],
+                migrationsTableName: "migrations_typeorm",
+                migrationsRun: true,
             })
         })
     ]

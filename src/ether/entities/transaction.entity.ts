@@ -1,6 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from "typeorm";
 import { Timestamp } from "src/database/mixins/timestamp";
-import { Block } from "src/block/entities/block.entity";
+import { Block } from "src/ether/entities/block.entity";
 
 @Entity()
 export class Transaction extends Timestamp {
