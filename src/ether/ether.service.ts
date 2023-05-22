@@ -40,7 +40,7 @@ export class EtherService {
                 args: [lastBlock + i]
             })
 
-            if (i < 7) {
+            if (i > 5) {
                 break;
             }
         }
