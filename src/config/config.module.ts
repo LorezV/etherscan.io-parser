@@ -15,8 +15,8 @@ import * as Joi from "joi";
                     db: process.env.POSTGRES_DB
                 },
                 polling: {
-                    start: process.env.POOL_START,
-                    delay: process.env.POOL_DELAY
+                    start: process.env.POLL_START,
+                    delay: process.env.POLL_DELAY
                 },
                 etherscanApiKey: process.env.ETHERSCAN_API_KEY
             })],
